@@ -1,3 +1,8 @@
+-- Project: Operations Metrics Dashboard
+-- Context: GOC-style operational analytics
+-- Purpose: SLA compliance and breach analysis
+-- Dataset: Simulated operational data
+
 CREATE DATABASE SLA;
 
 USE SLA;
@@ -42,3 +47,4 @@ round(sum(case
 from OPS_DATA
 group by process_name
 order by sla_breach_percentage desc;
+
